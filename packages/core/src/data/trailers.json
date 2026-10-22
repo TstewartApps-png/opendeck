@@ -1,0 +1,75 @@
+{
+  "note": "Typical planning values, not specs for any specific trailer. Real deck heights, lengths, tare weights and axle positions vary by manufacturer and configuration. Override them with your carrier's numbers.",
+  "trailers": [
+    {
+      "id": "flatbed-48",
+      "name": "Flatbed, 48 ft (closed tandem)",
+      "type": "flatbed",
+      "lengthIn": 576,
+      "widthIn": 102,
+      "tareWeightLb": 10500,
+      "decks": [{ "name": "main", "heightIn": 60, "lengthIn": 576, "startIn": 0 }],
+      "kingpinSetbackIn": 36,
+      "kingpinToAxleCenterIn": 480,
+      "axles": { "count": 2, "spreadIn": 49 }
+    },
+    {
+      "id": "flatbed-53",
+      "name": "Flatbed, 53 ft (closed tandem)",
+      "type": "flatbed",
+      "lengthIn": 636,
+      "widthIn": 102,
+      "tareWeightLb": 11500,
+      "decks": [{ "name": "main", "heightIn": 60, "lengthIn": 636, "startIn": 0 }],
+      "kingpinSetbackIn": 36,
+      "kingpinToAxleCenterIn": 540,
+      "axles": { "count": 2, "spreadIn": 49 }
+    },
+    {
+      "id": "step-deck-48",
+      "name": "Step deck, 48 ft",
+      "type": "step-deck",
+      "lengthIn": 576,
+      "widthIn": 102,
+      "tareWeightLb": 12000,
+      "decks": [
+        { "name": "upper", "heightIn": 60, "lengthIn": 132, "startIn": 0 },
+        { "name": "lower", "heightIn": 40, "lengthIn": 444, "startIn": 132 }
+      ],
+      "kingpinSetbackIn": 36,
+      "kingpinToAxleCenterIn": 480,
+      "axles": { "count": 2, "spreadIn": 49 }
+    },
+    {
+      "id": "double-drop-48",
+      "name": "Double drop, 48 ft (29 ft well)",
+      "type": "double-drop",
+      "lengthIn": 576,
+      "widthIn": 102,
+      "tareWeightLb": 16000,
+      "decks": [
+        { "name": "front", "heightIn": 60, "lengthIn": 120, "startIn": 0 },
+        { "name": "well", "heightIn": 22, "lengthIn": 348, "startIn": 120 },
+        { "name": "rear", "heightIn": 40, "lengthIn": 108, "startIn": 468 }
+      ],
+      "kingpinSetbackIn": 36,
+      "kingpinToAxleCenterIn": 486,
+      "axles": { "count": 2, "spreadIn": 49 }
+    },
+    {
+      "id": "rgn-3-axle",
+      "name": "RGN / lowboy, 3 axle (29 ft well)",
+      "type": "rgn",
+      "lengthIn": 576,
+      "widthIn": 102,
+      "tareWeightLb": 19000,
+      "decks": [
+        { "name": "well", "heightIn": 22, "lengthIn": 348, "startIn": 120 },
+        { "name": "rear", "heightIn": 40, "lengthIn": 108, "startIn": 468 }
+      ],
+      "kingpinSetbackIn": 36,
+      "kingpinToAxleCenterIn": 486,
+      "axles": { "count": 3, "spreadIn": 108 }
+    }
+  ]
+}

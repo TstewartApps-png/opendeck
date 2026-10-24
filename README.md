@@ -1,8 +1,15 @@
 # OpenDeck
 
-**Oversize/overweight load checker for open-deck and heavy-haul freight.**
+**Load planning for open-deck and heavy-haul freight: trailer selection, permits, and permit cost estimates.**
 
-You enter a piece of equipment and a trailer. OpenDeck tells you the loaded dimensions and gross weight, checks them against federal size and weight limits and the federal bridge formula, and (as state rules are added) shows what permits, escorts, and restrictions apply on your route.
+You enter a piece of equipment and a route. OpenDeck tells you:
+
+- **Which trailer to use:** flatbed, step deck, double drop, lowboy, RGN, multi-axle heavy haul, and more, ranked by the fewest permits needed
+- **Loaded dimensions and weight:** overall height, width, length, overhang, gross and axle weights
+- **Whether you need permits** in each state on the route, plus escort, flag, sign and travel-time rules
+- **Roughly what the permits will cost**, with every fee linked to the state's published schedule
+
+Today the core calculation engine is done: loaded dimensions, federal size and weight limits, and the federal bridge formula. Trailer recommendations, state permits, cost estimates and the web app are next (see [ROADMAP.md](ROADMAP.md)).
 
 Built for freight brokers, dispatchers, and owner-operators who move construction equipment, machinery, and other open-deck loads. Today they do this math by hand on every quote.
 
@@ -16,9 +23,11 @@ Built for freight brokers, dispatchers, and owner-operators who move constructio
 |---|---|
 | `@opendeck/core`: loaded dimensions, overhang, gross weight, axle layout | ✅ Done, tested |
 | Federal limits + federal bridge formula | ✅ Done, tested against FHWA worked examples |
-| Trailer library (flatbed, step deck, double drop, RGN) | ✅ Done |
-| State rules (WV, VA, PA, OH, KY, MD first) | ⏳ Next |
-| Web app with load diagram | ⏳ Planned |
+| Starter trailer library (flatbed, step deck, double drop, RGN) | ✅ Done |
+| Full trailer catalog + trailer recommendation | ⏳ Next |
+| State permit rules (WV, VA, PA, OH, KY, MD first) | ⏳ Next |
+| Permit cost estimates | ⏳ Planned |
+| Web app with load diagram and quote sheet | ⏳ Planned |
 
 See [ROADMAP.md](ROADMAP.md) for everything planned.
 
